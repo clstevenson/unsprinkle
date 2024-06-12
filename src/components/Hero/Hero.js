@@ -11,12 +11,12 @@ const Hero = () => {
           srcset={`${heroSrc}.avif 1x, ${heroSrc}@2x.avif 2x, ${heroSrc}@3x.avif 3x`}
         />
         <source
-          type="image/jpg"
+          type="image/jpeg"
           srcset={`${heroSrc}.jpg 1x, ${heroSrc}@2x.jpg 2x, ${heroSrc}@3x.jpg 3x`}
         />
-        <HeroImage src={`${heroSrc}.jpg`} />
+        <HeroImage src={`${heroSrc}.jpg`} alt="unsprinkle hero, a cat" />
       </picture>
-      <Swoop src="/swoop.svg" />
+      <Swoop src="/swoop.svg" alt="" />
     </Wrapper>
   );
 };

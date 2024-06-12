@@ -7,14 +7,14 @@ const PhotoGridItem = ({ id, src, alt, tags }) => {
       <Anchor href={`/photos/${id}`}>
         <picture>
           <source
-            type="image/webp"
-            srcset={`${src.replace(".jpg", ".avif")} 1x, ${src.replace(".jpg", "@2x.avif")} 2x, ${src.replace(".jpg", "@3x.avif")} 3x`}
+            type="image/avif"
+            srcSet={`${src.replace(".jpg", ".avif")} 1x, ${src.replace(".jpg", "@2x.avif")} 2x, ${src.replace(".jpg", "@3x.avif")} 3x`}
           />
           <source
-            type="image/jpg"
-            srcset={`${src} 1x, ${src.replace(".jpg", "@2x.jpg")} 2x, ${src.replace(".jpg", "@3x.jpg")} 3x`}
+            type="image/jpeg"
+            srcSet={`${src} 1x, ${src.replace(".jpg", "@2x.jpg")} 2x, ${src.replace(".jpg", "@3x.jpg")} 3x`}
           />
-          <Image src={src} />
+          <Image src={src} alt={alt} />
         </picture>
       </Anchor>
       <Tags>
