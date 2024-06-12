@@ -52,7 +52,12 @@ const Tag = styled.li`
   background: var(--color-gray-300);
   font-size: 0.875rem;
   font-weight: 475;
+  line-height: 1.25rem;
   color: var(--color-gray-800);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
 `;
 
 export default PhotoGridItem;
